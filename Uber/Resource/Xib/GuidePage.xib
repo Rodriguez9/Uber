@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuidePage" customModule="Uber" customModuleProvider="target">
+            <connections>
+                <outlet property="backImageView" destination="6AG-oa-php" id="b3i-t9-f9Y"/>
+                <outlet property="backView" destination="w4p-8l-bUk" id="gcz-ka-MgN"/>
+                <outlet property="view" destination="iN0-l3-epB" id="zG9-eL-5aA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ADBannerView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4p-8l-bUk">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azo-fb-nn8">
+                            <rect key="frame" x="285" y="667" width="102" height="42"/>
+                            <color key="backgroundColor" red="0.44108784198760986" green="0.84537076950073242" blue="0.90849512815475464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="JLn-h4-8GZ"/>
+                                <constraint firstAttribute="width" constant="102" id="wbw-b5-mY6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <state key="normal" title="登陆"/>
+                            <connections>
+                                <action selector="doLogin:" destination="-1" eventType="touchUpInside" id="ZPr-Be-1Jj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2i-xe-5EO">
+                            <rect key="frame" x="22" y="667" width="102" height="42"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="102" id="Ejk-CY-PZs"/>
+                                <constraint firstAttribute="height" constant="42" id="MKq-gA-xco"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <state key="normal" title="注册">
+                                <color key="titleColor" red="0.24906435608863831" green="0.18468746542930603" blue="0.93058335781097412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="doResign" destination="-1" eventType="touchUpInside" id="KL1-9S-IdD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6SB-KC-mTd" firstAttribute="trailing" secondItem="azo-fb-nn8" secondAttribute="trailing" constant="27" id="DxU-p7-bM9"/>
+                        <constraint firstItem="6SB-KC-mTd" firstAttribute="bottom" secondItem="azo-fb-nn8" secondAttribute="bottom" constant="27" id="Hs0-5x-JAY"/>
+                        <constraint firstItem="6SB-KC-mTd" firstAttribute="bottom" secondItem="O2i-xe-5EO" secondAttribute="bottom" constant="27" id="INI-wC-jiY"/>
+                        <constraint firstItem="6SB-KC-mTd" firstAttribute="trailing" secondItem="azo-fb-nn8" secondAttribute="trailing" constant="27" id="PxT-n0-jeb"/>
+                        <constraint firstItem="O2i-xe-5EO" firstAttribute="leading" secondItem="6SB-KC-mTd" secondAttribute="leading" constant="22" id="Uhi-jY-qwE"/>
+                        <constraint firstItem="O2i-xe-5EO" firstAttribute="leading" secondItem="6SB-KC-mTd" secondAttribute="leading" constant="22" id="d8X-FG-5x3"/>
+                        <constraint firstItem="6SB-KC-mTd" firstAttribute="bottom" secondItem="O2i-xe-5EO" secondAttribute="bottom" constant="27" id="hwr-Me-mfP"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="6SB-KC-mTd"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6AG-oa-php">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w4p-8l-bUk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="643-4D-b6S"/>
+                <constraint firstItem="w4p-8l-bUk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MVp-re-mL9"/>
+                <constraint firstItem="6AG-oa-php" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NTa-JE-YXG"/>
+                <constraint firstAttribute="bottom" secondItem="w4p-8l-bUk" secondAttribute="bottom" id="W4v-46-Gc4"/>
+                <constraint firstAttribute="bottom" secondItem="6AG-oa-php" secondAttribute="bottom" id="avy-J7-63Q"/>
+                <constraint firstAttribute="trailing" secondItem="w4p-8l-bUk" secondAttribute="trailing" id="cXi-Lv-1gm"/>
+                <constraint firstAttribute="trailing" secondItem="6AG-oa-php" secondAttribute="trailing" id="jxq-gi-svs"/>
+                <constraint firstItem="6AG-oa-php" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oH4-42-rWg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="89" y="11"/>
+        </view>
+    </objects>
+</document>
